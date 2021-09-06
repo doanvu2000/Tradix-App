@@ -11,7 +11,9 @@
 
         <action
             android:id="@+id/action_homeFragment_to_coinFragment"
-            app:destination="@id/coinFragment" />
+            app:destination="@id/coinFragment"
+            app:enterAnim="@anim/form_left"
+            app:popEnterAnim="@anim/form_right" />
     </fragment>
 
     <fragment
@@ -33,7 +35,9 @@
 
         <action
             android:id="@+id/action_newsFragment_to_newsArticleFragment"
-            app:destination="@id/newsArticleFragment" />
+            app:destination="@id/newsArticleFragment"
+            app:enterAnim="@anim/form_left"
+            app:popEnterAnim="@anim/form_right" />
     </fragment>
 
     <fragment

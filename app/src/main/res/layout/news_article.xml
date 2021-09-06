@@ -67,7 +67,7 @@
 
     <ImageView
         android:id="@+id/btnBackToNewsInArticle"
-        android:layout_width="20dp"
+        android:layout_width="30dp"
         android:layout_height="0dp"
         android:src="@drawable/ic_baseline_arrow_back_ios_24"
         app:layout_constraintBottom_toTopOf="@id/horizontal_1"

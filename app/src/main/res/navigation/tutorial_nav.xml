@@ -12,7 +12,9 @@
         tools:layout="@layout/onboarding1" >
         <action
             android:id="@+id/action_onBoarding1Fragment_to_onBoarding2Fragment"
-            app:destination="@id/onBoarding2Fragment" />
+            app:destination="@id/onBoarding2Fragment"
+            app:enterAnim="@anim/form_left"
+            app:popEnterAnim="@anim/form_right" />
     </fragment>
     <fragment
         android:id="@+id/onBoarding2Fragment"
@@ -21,7 +23,9 @@
         tools:layout="@layout/onboarding2" >
         <action
             android:id="@+id/action_onBoarding2Fragment_to_onBoarding3Fragment"
-            app:destination="@id/onBoarding3Fragment" />
+            app:destination="@id/onBoarding3Fragment"
+            app:enterAnim="@anim/form_left"
+            app:popEnterAnim="@anim/form_right" />
     </fragment>
     <fragment
         android:id="@+id/onBoarding3Fragment"
