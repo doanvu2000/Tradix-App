@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_three"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_1"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_1"
+        app:layout_constraintRight_toLeftOf="@+id/tvCoinUserName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCoinUserName"
+        style="@style/TextStyle51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEO INDEX"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_1"
+        app:layout_constraintLeft_toRightOf="@id/btnBack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTypeMoney"
+        style="@style/TextStyle52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USD"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_1"
+        app:layout_constraintLeft_toRightOf="@id/btnBack"
+        app:layout_constraintTop_toBottomOf="@id/tvCoinUserName" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        style="@style/TextStyle52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Binance"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_1"
+        app:layout_constraintLeft_toRightOf="@id/tvTypeMoney"
+        app:layout_constraintTop_toBottomOf="@id/tvCoinUserName" />
+
+    <ImageButton
+        android:id="@+id/imgBellCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bell_black"
+        android:src="@drawable/icons_8_alarm"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_1"
+        app:layout_constraintRight_toLeftOf="@id/iconMenu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/iconMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_1"
+        app:layout_constraintRight_toRightOf="@id/vertical_2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/card_money_detail"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_2"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_1"
+        app:layout_constraintRight_toRightOf="@id/vertical_2"
+        app:layout_constraintTop_toTopOf="@id/horizontal_1">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icons_8_long_arrow_up" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <TextView
+                    style="@style/TextStyle54"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="RATE" />
+
+                <TextView
+                    style="@style/TextStyle54"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="TODAY CHANGE" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/tvCoinCurrentMoney"
+                    style="@style/TextStyle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="21,1637 USD" />
+
+                <TextView
+                    android:id="@+id/tvCoinCurrentPercent"
+                    style="@style/TextStyle57"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="+2,0634 (+9,44%)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <TextView
+                    style="@style/TextStyle56"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="17:00:33 Real time" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnBackChart"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_3"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_1"
+        app:layout_constraintTop_toTopOf="@id/horizontal_2" />
+
+    <TextView
+        android:id="@+id/tvNeoChart"
+        style="@style/TextStyle58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_item_green"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="Neo Chart"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_3"
+        app:layout_constraintLeft_toRightOf="@id/btnBackChart"
+        app:layout_constraintRight_toLeftOf="@id/btnForwardChart"
+        app:layout_constraintTop_toTopOf="@id/horizontal_2" />
+
+    <ImageButton
+        android:id="@+id/btnForwardChart"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_baseline_arrow_forward_24"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_3"
+        app:layout_constraintRight_toRightOf="@id/vertical_2"
+        app:layout_constraintTop_toTopOf="@id/horizontal_2" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/componente_7_4"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_4"
+        app:layout_constraintTop_toTopOf="@id/horizontal_2" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/neo_chart"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_4"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_1"
+        app:layout_constraintRight_toRightOf="@id/vertical_2"
+        app:layout_constraintTop_toTopOf="@id/horizontal_3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/border_layout_white_two"
+        android:padding="5dp"
+        android:paddingStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_5"
+        app:layout_constraintTop_toTopOf="@id/horizontal_4">
+
+        <TextView
+            style="@style/TextStyle59"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:text="General" />
+
+        <TextView
+            style="@style/TextStyle59"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@drawable/button_pink_radius"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:text="Technical Section" />
+
+        <TextView
+            style="@style/TextStyle59"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:text="Markets" />
+
+        <TextView
+            style="@style/TextStyle59"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:text="Charts" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white_two"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/horizontal_5" />
+
+    <LinearLayout
+        android:id="@+id/imageleft"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_6"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_1"
+        app:layout_constraintRight_toLeftOf="@id/imageleft"
+        app:layout_constraintTop_toTopOf="@id/horizontal_5">
+
+        <TextView
+            style="@style/TextStyle61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="Buy or Sell for NEO" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_image_white_three"
+            android:scaleType="center"
+            android:src="@drawable/raggruppa_38" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/imageright"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_6"
+        app:layout_constraintLeft_toRightOf="@id/imageleft"
+        app:layout_constraintRight_toRightOf="@id/vertical_2"
+        app:layout_constraintTop_toTopOf="@id/horizontal_5">
+
+        <TextView
+            style="@style/TextStyle61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="Mkt Capitalization" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_image_white_three"
+            android:scaleType="center"
+            android:src="@drawable/raggruppa_60" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MenuTitle">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/icons_8_increase" />
+    <item
+        android:id="@+id/coinFragment"
+        android:icon="@drawable/icons_8_chart" />
+    <item
+        android:id="@+id/newsFragment"
+        android:icon="@drawable/outline_article_24" />
+    <item
+        android:id="@+id/menuFragment"
+        android:icon="@drawable/icons_8_customer" />
+</menu>

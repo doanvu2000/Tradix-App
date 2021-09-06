@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_three"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/componente_6_2"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/TextStyle40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|right"
+        android:text="TRADIX"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_1"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_1"
+        app:layout_constraintRight_toRightOf="@id/vertical_2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/coin"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_1"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_2"
+        app:layout_constraintRight_toRightOf="@id/vertical_3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icons_8_search"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_1"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_3"
+        app:layout_constraintRight_toRightOf="@id/vertical_4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/border_layout_white_two"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_2"
+        app:layout_constraintTop_toTopOf="@id/horizontal_1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_listCoin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_3"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_1"
+        app:layout_constraintRight_toRightOf="@id/vertical_4"
+        app:layout_constraintTop_toTopOf="@id/horizontal_2" />
+
+    <ImageButton
+        android:id="@+id/imgBell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bell_black"
+        android:src="@drawable/icons_8_alarm"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_3"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/horizontal_2"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLoadMore"
+        style="@style/TextStyle50"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_pink_radius"
+        android:text="Load More"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_2"
+        app:layout_constraintRight_toRightOf="@id/vertical_3"
+        app:layout_constraintTop_toTopOf="@id/horizontal_3"
+        app:layout_constraintWidth_percent="0.3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

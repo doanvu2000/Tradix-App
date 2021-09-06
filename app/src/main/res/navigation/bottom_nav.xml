@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="fragment.HomeFragment"
+        tools:layout="@layout/home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_coinFragment"
+            app:destination="@id/coinFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/coinFragment"
+        android:name="fragment.CoinFragment"
+        tools:layout="@layout/coin">
+
+        <argument
+            android:name="user_coin"
+            android:defaultValue="@null"
+            app:argType="object.User"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="fragment.NewsFragment"
+        tools:layout="@layout/news">
+
+        <action
+            android:id="@+id/action_newsFragment_to_newsArticleFragment"
+            app:destination="@id/newsArticleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newsArticleFragment"
+        android:name="fragment.NewsArticleFragment"
+        tools:layout="@layout/news_article">
+
+        <argument
+            android:name="itemNew"
+            android:defaultValue="Title_Item_News"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="fragment.MenuFragment"
+        tools:layout="@layout/layout_menu">
+
+    </fragment>
+
+</navigation>

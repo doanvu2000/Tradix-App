@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_three"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <ImageButton
+        android:id="@+id/btnBackToStep1"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        android:scaleType="center"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_1"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btnSkipInStep2"
+        style="@style/TextStyle75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_1"
+        app:layout_constraintRight_toRightOf="@id/vertical_2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_2"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_1"
+        app:layout_constraintRight_toRightOf="@id/vertical_2"
+        app:layout_constraintTop_toTopOf="@id/horizontal_1">
+
+        <TextView
+            style="@style/TextStyle76"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:text="Follow our ti[s to achieve success!!" />
+
+        <TextView
+            style="@style/TextStyle42"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Ex totam praesentium incidunt aut." />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/componente_4_1"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/horizontal_2" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/gruppo_di_maschere_3"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/horizontal_2" />
+
+
+    <View
+        android:id="@+id/step1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/circle_tutorial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/vertical_1"
+        app:layout_constraintRight_toLeftOf="@id/step3"
+        app:layout_constraintTop_toTopOf="@id/horizontal_3" />
+
+    <View
+        android:id="@+id/step2"
+        android:layout_width="30dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/button_pink_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/step1"
+        app:layout_constraintRight_toLeftOf="@id/step3"
+        app:layout_constraintTop_toTopOf="@id/horizontal_3" />
+
+    <View
+        android:id="@+id/step3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/circle_tutorial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/step2"
+        app:layout_constraintTop_toTopOf="@id/horizontal_3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNextStep3"
+        style="@style/TextStyle34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_login"
+        android:paddingHorizontal="40dp"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintLeft_toRightOf="@id/step3"
+        app:layout_constraintRight_toRightOf="@id/vertical_2"
+        app:layout_constraintTop_toTopOf="@id/horizontal_3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
