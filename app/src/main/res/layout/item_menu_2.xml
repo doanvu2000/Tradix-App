@@ -27,12 +27,13 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.05" />
 
-        <ImageView
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/bell_pink"
+            android:backgroundTint="#F137CC"
             android:scaleType="center"
             android:src="@drawable/icons_8_alarm"
+            app:fabSize="mini"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="@id/vertical_0"
             app:layout_constraintRight_toRightOf="@id/vertical_1"
@@ -72,12 +73,13 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.05" />
 
-        <ImageView
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/bell_pink"
+            android:backgroundTint="#F137CC"
             android:scaleType="center"
             android:src="@drawable/icons_8_left_and_right_arrows"
+            app:fabSize="mini"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="@id/vertical_20"
             app:layout_constraintRight_toRightOf="@id/vertical_2"
@@ -116,12 +118,13 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.05" />
 
-        <ImageView
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/bell_pink"
+            android:backgroundTint="#F137CC"
             android:scaleType="center"
             android:src="@drawable/icons_8_pin"
+            app:fabSize="mini"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="@id/vertical_30"
             app:layout_constraintRight_toRightOf="@id/vertical_3"
@@ -160,12 +163,13 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.05" />
 
-        <ImageView
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/bell_pink"
+            android:backgroundTint="#F137CC"
             android:scaleType="center"
             android:src="@drawable/icons_8_no_entry"
+            app:fabSize="mini"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="@id/vertical_40"
             app:layout_constraintRight_toRightOf="@id/vertical_4"

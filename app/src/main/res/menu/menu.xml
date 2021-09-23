@@ -4,14 +4,18 @@
     tools:ignore="MenuTitle">
     <item
         android:id="@+id/homeFragment"
+        android:menuCategory="secondary"
         android:icon="@drawable/icons_8_increase" />
     <item
+        android:menuCategory="secondary"
         android:id="@+id/coinFragment"
         android:icon="@drawable/icons_8_chart" />
     <item
+        android:menuCategory="secondary"
         android:id="@+id/newsFragment"
         android:icon="@drawable/outline_article_24" />
     <item
+        android:menuCategory="secondary"
         android:id="@+id/menuFragment"
         android:icon="@drawable/icons_8_customer" />
 </menu>

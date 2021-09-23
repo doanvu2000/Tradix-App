@@ -1,5 +1,6 @@
 package fragment
 
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -26,11 +27,11 @@ class CoinFragment : Fragment() {
             view.tvCoinCurrentMoney.text = args.userCoin?.currentMoney
             view.tvCoinCurrentPercent.text = args.userCoin?.currentPercent
         }
-        view.imgBellCoin.setOnClickListener {
+        view.btnAlarmCoin.setOnClickListener {
             isClickBell = !isClickBell
             if (isClickBell) {
-                view.imgBellCoin.setBackgroundResource(R.drawable.bell_blue)
-            } else view.imgBellCoin.setBackgroundResource(R.drawable.bell_black)
+                view.btnAlarmCoin.background.setTint(Color.parseColor("#370bf0"))
+            } else view.btnAlarmCoin.background.setTint(Color.parseColor("#000000"))
         }
         view.btnBackToHomeInCoin.setOnClickListener {
             findNavController().navigateUp()

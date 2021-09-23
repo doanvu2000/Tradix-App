@@ -101,6 +101,7 @@
             android:paddingStart="22dp" />
 
         <EditText
+            android:inputType="textPassword"
             android:id="@+id/edtLoginPassword"
             style="@style/TextStyle35"
             android:layout_width="match_parent"

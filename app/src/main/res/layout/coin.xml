@@ -105,12 +105,14 @@
         app:layout_constraintLeft_toRightOf="@id/tvTypeMoney"
         app:layout_constraintTop_toBottomOf="@id/tvCoinUserName" />
 
-    <ImageButton
-        android:id="@+id/imgBellCoin"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAlarmCoin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bell_black"
+        android:backgroundTint="#000000"
+        android:scaleType="center"
         android:src="@drawable/icons_8_alarm"
+        app:fabSize="mini"
         app:layout_constraintBottom_toTopOf="@id/horizontal_1"
         app:layout_constraintRight_toLeftOf="@id/iconMenu"
         app:layout_constraintTop_toTopOf="parent" />

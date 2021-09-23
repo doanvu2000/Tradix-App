@@ -22,12 +22,16 @@ class LoginActivity : AppCompatActivity() {
         btnLogin.setOnClickListener {
             val email: String = edtLoginEmail.text.toString()
             val password: String = edtLoginPassword.text.toString()
-            if (email == "admin" && password == "123" || (email == userAcc && password == pass)) {
-                val loginIntent = Intent(this, MainActivity::class.java)
-                loginIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-                startActivity(loginIntent)
-                Toast.makeText(this, "Login with admin", Toast.LENGTH_SHORT).show()
-            }
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "You must enter your email and password", Toast.LENGTH_SHORT)
+                    .show()
+            } else
+                if (email == "admin" && password == "123" || (email == userAcc && password == pass)) {
+                    val loginIntent = Intent(this, MainActivity::class.java)
+                    loginIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    startActivity(loginIntent)
+                    Toast.makeText(this, "Login with admin", Toast.LENGTH_SHORT).show()
+                }
         }
         btnForgotLogin.setOnClickListener {
             startActivity(Intent(this, ForgotPasswordActivity::class.java))

@@ -34,15 +34,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-
-        val dialog = AlertDialog.Builder(this)
-        dialog.setTitle("Are you sure!")
-            .setMessage("Do you want to exit app?")
-            .setNegativeButton("No") { _: DialogInterface, _: Int -> }
-            .setPositiveButton("Yes") { _: DialogInterface, _: Int ->
-                finish()
-            }
-            .show()
+        if (fragment.childFragmentManager.backStackEntryCount == 0){
+            val dialog = AlertDialog.Builder(this)
+            dialog.setTitle("Are you sure!")
+                .setMessage("Do you want to exit app?")
+                .setNegativeButton("No") { _: DialogInterface, _: Int -> }
+                .setPositiveButton("Yes") { _: DialogInterface, _: Int ->
+                    finish()
+                }
+                .show()
+        }
+       else super.onBackPressed()
     }
 
     private fun getAppTaskState(): String? {
